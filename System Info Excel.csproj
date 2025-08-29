@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+   <OutputType>Exe</OutputType>
+   <TargetFramework>net9.0-windows</TargetFramework> 
+   <!-- Включает поддержку Windows Forms  -->
+   <UseWindowsForms>true</UseWindowsForms> 
+   <RootNamespace>System_Info_Excel</RootNamespace>
+   <!-- Включение основных библиотек по типу System, System.IO, System.Linq и др.  -->
+   <ImplicitUsings>enable</ImplicitUsings>
+   <!-- Помогает избежать ошибок с null в коде. -->
+   <Nullable>enable</Nullable> 
+  </PropertyGroup>
+  <!-- Пакеты требуемые для работы с Excel и для получения системной информации-->
+  <ItemGroup>
+   <PackageReference Include="EPPlus" Version="8.1.0" />
+   <PackageReference Include="System.Management" Version="9.0.8" />
+  </ItemGroup>
+</Project>
